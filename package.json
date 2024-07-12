@@ -18,7 +18,7 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "audit": "pnpm audit",
-    "audit:ci": "pnpm audit-ci --low",
+    "audit:ci": "pnpm audit --audit-level=low",
     "coverage": "nyc report --reporter=html && nyc check-coverage"
   },
   "dependencies": {
@@ -43,7 +43,6 @@
     "eslint-plugin-prettier": "^5.0.0",
     "jest": "^29.7.0",
     "jest-html-reporter": "^3.10.2",
-    "pnpm-audit-ci": "^1.2.1",
     "nyc": "^17.0.0",
     "prettier": "^3.0.0",
     "source-map-support": "^0.5.21",
